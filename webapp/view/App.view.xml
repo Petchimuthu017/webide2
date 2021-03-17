@@ -1,0 +1,45 @@
+<mvc:View 
+controllerName="myApp.Calculator_App.controller.App" 
+xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true" 
+xmlns="sap.m"
+xmlns:l="sap.ui.layout">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<l:VerticalLayout class="sapUiLargeMarginBegin">
+						<Input width="100%" valueLiveUpdate="true" value="{Text>/Text}"/>
+						<l:HorizontalLayout>
+						<Button text="1" id="button1" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="2" id="button2" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="3" id="button3" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="+" id="button4" press="onPress" class="sapUiTinyMarginEnd"/>
+						</l:HorizontalLayout>
+						<l:HorizontalLayout>
+						<Button text="4" id="button5" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="5" id="button6" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="6" id="button7" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="-" id="button8" press="onPress" class="sapUiTinyMarginEnd"/>
+						</l:HorizontalLayout>
+						<l:HorizontalLayout>
+						<Button text="7" id="button9" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="8" id="button10" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="9" id="button11" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="*" id="button12" press="onPress" class="sapUiTinyMarginEnd"/>
+						</l:HorizontalLayout>
+						<l:HorizontalLayout>
+						<Button text="." id="button13" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="0" id="button14" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="/" id="button15" press="onPress" class="sapUiTinyMarginEnd"/>
+						<Button text="=" id="button16" press="onPress" type="Accept" class="sapUiTinyMarginEnd"/>
+						</l:HorizontalLayout>
+						<Button text ="Clear" id="button17" press="onClear" type="Reject" width="100%"/>
+						</l:VerticalLayout>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
